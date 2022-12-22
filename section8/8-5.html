@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .contents1 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+        .contents2 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+        }
+        .contents3 {
+            width: 200px;
+            overflow: hidden;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+        }
+        .contents4 {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 박스의 높이에 맞게 텍스트 양을 넣은 경우 -->
+    <div class="contents1">
+        <h4>콘텐츠 양이 일정</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo totam obcaecati repellat quod ad impedit reiciendis reprehenderit, laborum, esse tempora odit voluptatibus vel
+
+        </p>
+    </div>
+
+    <!-- 박스의 높이보다 텍스트의 양이 많아서 박스 밖으로 흘러 넘치는 경우 -->
+    <div class="contents2">
+        <h4>콘텐츠의 양이 많거나 유동적일 때 흘러 넘침</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit distinctio at magni cumque corporis quae, nisi, iste voluptatibus debitis obcaecati hic delectus! Possimus earum doloremque similique, ex deserunt modi.
+
+        </p>
+    </div>
+
+    <!-- 박스의 높이를 설정하지 않고 overflow:hidden을 지정하여 텍스트만큼 높이도 늘어나는 경우 -->
+    <div class="contents3">
+        <h4>콘텐츠의 양에 따라서 높이가 늘어남</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quae nemo dolor? Amet cumque ipsum corrupti, voluptatum, nemo soluta, aspernatur eius aliquam ipsa minus autem maxime quod ducimus modi officia?
+
+        </p>
+    </div>
+
+    <!-- 박스의 높이를 지정하고 overflow:hidden을 지정하여 높이만큼만 보여지는 경우 -->
+    <div class="contents4">박스의 지정된 높이만큼만 콘텐츠가 보임
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo architecto molestias, dolorem repudiandae, amet natus quos explicabo minima accusantium ea dolorum. Temporibus delectus accusantium, accusamus modi doloribus neque amet laborum?
+            
+        </p>
+    </div>
+    
+</body>
+</html>
